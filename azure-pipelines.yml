@@ -26,8 +26,10 @@ steps:
     inputs:
       command: 'validate'
       allowTelemetryCollection: true
-  - task: TerraformCLI@0
+  - task: TerraformCLI@0  
     inputs:
       command: 'plan'
       runAzLogin: true
       allowTelemetryCollection: true
+    env:
+      TF_VAR_client_secret: $(client-secret)
