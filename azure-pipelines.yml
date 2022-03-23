@@ -13,7 +13,7 @@ steps:
     inputs:
       azureSubscription: 'Subskrypcja programu Visual Studio Professional(2)(0ad5ac4a-b031-42a2-9fe5-5feb754f1822)'
       KeyVaultName: 'prpu-az-vault'
-      SecretsFilter: 'clietn-secret'
+      SecretsFilter: 'client-secret'
       RunAsPreJob: false
   - task: TerraformInstaller@0
     inputs:
